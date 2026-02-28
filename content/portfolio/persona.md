@@ -7,7 +7,7 @@ screens: []
 draft: false
 ---
 
-Built as part of a [presentation given at DroidKaigi 2024](../../presentation/persona-im), this app aims to recreate the in-game messaging UI seen in Persona 5 as closely as possible.
+Built as part of a [talk at KotlinConf 2025](www.youtube.com/watch?v=9KdP2idt6LE) and [at DroidKaigi 2024](../../presentation/persona-im), this app aims to recreate the in-game messaging UI seen in Persona 5 as closely as possible.
 
 Here's a reference of what it looks like in game:
 

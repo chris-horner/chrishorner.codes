@@ -1,7 +1,7 @@
 ---
-title: "Creative UIs with Compose"
+title: "DroidKaigi - Creative UIs with Compose"
 date: 2024-09-13T17:20:00+09:00
-summary: "How to recreate Persona 5's UI with Compose."
+summary: "How to recreate Persona 5's UI with Compose UI."
 conference: "DroidKaigi 2024"
 conferenceLink: "https://2024.droidkaigi.jp/en/"
 location: "Tokyo"
