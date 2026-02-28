@@ -98,7 +98,7 @@ p {
   font-size: large;
 }
 
-h1, h4, h5, li {
+h1, h3, h4, h5, li {
   color: var(--text-colour-primary);
 }
 
