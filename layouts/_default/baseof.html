@@ -2,26 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="author" content="Chris Horner">
+    <meta name="author" content="{{ .Site.Params.author.name }}">
     <meta name="description" content="{{ .Page.Summary }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .Title }}</title>
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css" type="text/css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/syntax.css" type="text/css">
-    <link rel="alernate" href="{{ .Site.BaseURL }}/index.xml" type="application/rss+xml" >
+    {{ $mainCSS := resources.Get "css/main.css" | fingerprint }}
+    {{ $syntaxCSS := resources.Get "css/syntax.css" | fingerprint }}
+    <link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}" type="text/css">
+    <link rel="stylesheet" href="{{ $syntaxCSS.RelPermalink }}" type="text/css">
+    <link rel="alternate" href="{{ "index.xml" | absURL }}" type="application/rss+xml" >
     <meta property="og:title" content="{{ .Title }}"/>
     <meta property="og:description" content="{{ .Page.Summary }}"/>
-    <meta property="og:image" content="{{ if .Params.banner }}{{ .Site.BaseURL }}/img/{{ .Params.banner }}{{ else }}{{ .Site.BaseURL }}/img/default_banner.jpg{{ end }}"/>
+    <meta property="og:image" content="{{ if .Params.banner }}{{ printf "img/%s" .Params.banner | absURL }}{{ else }}{{ "img/default_banner.jpg" | absURL }}{{ end }}"/>
     <meta property="og:url" content="{{ .Permalink }}"/>
     <meta property="og:locale" content="en_AU"/>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@chris_h_codes" />
     <meta name="twitter:title" content="{{ .Title }}"/>
     <meta name="twitter:description" content="{{ .Page.Summary }}"/>
-    <meta name="twitter:image" content="{{ if .Params.banner }}{{ .Site.BaseURL }}/img/{{ .Params.banner }}{{ else }}{{ .Site.BaseURL }}/img/default_banner.jpg{{ end }}"/>
+    <meta name="twitter:image" content="{{ if .Params.banner }}{{ printf "img/%s" .Params.banner | absURL }}{{ else }}{{ "img/default_banner.jpg" | absURL }}{{ end }}"/>
   </head>
   {{ block "main" . }}
 
   {{ end }}
 </html>
-

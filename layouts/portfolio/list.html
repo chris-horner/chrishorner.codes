@@ -3,7 +3,7 @@
 <body id="portfolio">
 
   <header>
-    <h1><a href="{{ .Site.BaseURL }}/">Chris Horner</a></h1>
+    <h1><a href="{{ "/" | relURL }}">Chris Horner</a></h1>
   </header>
 
   <div id="content-outer-container">
@@ -12,11 +12,11 @@
       <p class="subtitle">{{ .Params.subtitle }}</p>
       <hr/>
       <ul class="list">
-        {{ range .Data.Pages }}
+        {{ range .Pages }}
         <li>
           <a href="{{ .Permalink }}">
             <div class="portfolio-item">
-              <img src="{{ .Site.BaseURL }}/img/{{ .Params.icon }}"/>
+              <img src="{{ printf "img/%s" .Params.icon | relURL }}"/>
               <div>
                 <h3>{{ .Title }}</h3>
                 <p>{{ .Params.summary }}</p>
@@ -32,4 +32,3 @@
 
 </body>
 {{ end }}
-

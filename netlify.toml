@@ -7,3 +7,15 @@ command = """\
   git config core.quotepath false && \
   hugo build --gc --minify --baseURL "${URL}"
   """
+
+[[redirects]]
+  from = "https://chrishorner.dev/*"
+  to = "https://chrishorner.codes/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://chrishorner.netlify.com/*"
+  to = "https://chrishorner.codes/:splat"
+  status = 301
+  force = true

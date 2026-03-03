@@ -1,11 +1,14 @@
 baseURL = "https://chrishorner.codes"
 languageCode = "en-au"
 title = "Chris Horner"
-pygmentsUseClasses = true
-pygmentsCodefences = true
 disableKinds = ["taxonomy"]
+
 [markup.goldmark.renderer]
-unsafe= true
+unsafe = true
+
+[markup.highlight]
+noClasses = false
+
 [params.author]
-	name = "Chris Horner"
-	email = "chris [at] horner [dot] chat"
+  name = "Chris Horner"
+  email = "chris [at] horner [dot] chat"
