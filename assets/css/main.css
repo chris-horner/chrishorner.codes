@@ -14,6 +14,7 @@
     --quote-background-colour: #eeeeee;
     --quote-indent-colour: #cccccc;
     --code-background-colour: #eeeeee;
+    --text-colour-body: #333333;
     --inline-code-colour: #4a7a8f;
 }
 
@@ -34,6 +35,7 @@
         --quote-background-colour: #262626;
         --quote-indent-colour: #404040;
         --code-background-colour: #262626;
+        --text-colour-body: #c8c8c8;
         --inline-code-colour: #8aaab8;
     }
 }
@@ -118,7 +120,7 @@ body {
 }
 
 p {
-    color: var(--text-colour-primary);
+    color: var(--text-colour-body);
     line-height: 1.4;
     font-size: large;
 }
@@ -135,8 +137,7 @@ h6 {
 h1,
 h3,
 h4,
-h5,
-li {
+h5 {
     color: var(--text-colour-primary);
 }
 
@@ -146,6 +147,7 @@ p > a {
 }
 
 li {
+    color: var(--text-colour-body);
     line-height: 1.4;
     font-size: large;
 }
@@ -481,6 +483,11 @@ span#date {
     font-family: "MonoSpec", monospace;
 }
 
+span#date a {
+    color: inherit;
+    font-weight: inherit;
+}
+
 code {
     font-family:
         "JetBrainsMono", "Monaco", "Oxygen Mono", "Lucida Console", monospace;
@@ -629,5 +636,13 @@ section.slides-container {
         margin-right: 32px;
         vertical-align: middle;
         border-radius: 14px;
+    }
+
+    p, li {
+        font-size: 1.25rem;
+    }
+
+    code {
+        font-size: 1.05rem;
     }
 }
