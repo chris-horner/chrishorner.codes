@@ -14,7 +14,7 @@
     --quote-background-colour: #eeeeee;
     --quote-indent-colour: #cccccc;
     --code-background-colour: #eeeeee;
-    --inline-code-colour: #03a9f4;
+    --inline-code-colour: #4a7a8f;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,7 +34,7 @@
         --quote-background-colour: #262626;
         --quote-indent-colour: #404040;
         --code-background-colour: #262626;
-        --inline-code-colour: #66d9ef;
+        --inline-code-colour: #8aaab8;
     }
 }
 
@@ -141,7 +141,8 @@ li {
 }
 
 p > a {
-    color: var(--link-colour);
+    color: var(--text-colour-primary);
+    font-weight: 700;
 }
 
 li {
@@ -150,7 +151,8 @@ li {
 }
 
 li > a {
-    color: var(--link-colour);
+    color: var(--text-colour-primary);
+    font-weight: 700;
 }
 
 h4 {
