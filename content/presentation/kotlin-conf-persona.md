@@ -1,8 +1,8 @@
 ---
-title: "KotlinConf - Creative UIs with Compose"
+title: "Creative UIs with Compose"
 date: 2025-05-22T11:15:00+02:00
-summary: "How to recreate Persona 5's UI with Compose UI."
-conference: "KotlinConf 2025"
+summary: "Updated - How to recreate Persona 5's UI with Compose."
+conference: "KotlinConf"
 conferenceLink: "https://2025.kotlinconf.com/speakers/ea8b9ce3-c07c-4683-9e4e-81f6680e896d/"
 location: "Copenhagen"
 youtube: "https://www.youtube.com/embed/9KdP2idt6LE"

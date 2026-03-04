@@ -2,15 +2,15 @@
 
 <body id="portfolio">
 
-  <header>
-    <h1><a href="{{ "/" | relURL }}">Chris Horner</a></h1>
-  </header>
-
   <div id="content-outer-container">
     <div id="list-inner-container">
-      <h2>{{ .Title }}</h2>
-      <p class="subtitle">{{ .Params.subtitle }}</p>
-      <hr/>
+      <header class="list-header">
+        <h1><a href="{{ "/" | relURL }}">Chris Horner</a></h1>
+        <div class="list-subtitle">
+          {{ partial "icons/app_portfolio.svg" }}
+          <span>{{ .Title }}</span>
+        </div>
+      </header>
       <ul class="list">
         {{ range .Pages }}
         <li>
