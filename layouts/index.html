@@ -3,59 +3,74 @@
 <body id="home">
   <header>
     <h1>Chris Horner</h1>
-    <ul class="nav-list">
-
-      <li>
-        <a href="{{ "post/" | relURL }}">
-          {{ partial "icons/blog.svg" }}
-          <span>Blog</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="{{ "portfolio/" | relURL }}">
-          {{ partial "icons/portfolio.svg" }}
-          <span>Portfolio</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="{{ "presentation/" | relURL }}">
-          {{ partial "icons/presentations.svg" }}
-          <span>Presentations</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://github.com/chris-horner">
-          {{ partial "icons/github.svg" }}
-          <span>Github</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://bsky.app/profile/chris-horner.bsky.social">
-          {{ partial "icons/bluesky.svg" }}
-          <span>Bluesky</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://twitter.com/chris_h_codes">
-          {{ partial "icons/twitter.svg" }}
-          <span>Twitter</span>
-        </a>
-      </li>
-
-      <li>
-        <a rel="me" href="https://androiddev.social/@chrishorner">
-          {{ partial "icons/mastodon.svg" }}
-          <span>Mastodon</span>
-        </a>
-      </li>
-
-    </ul>
+    <div id="home-subtitle">{{ .Content }}</div>
   </header>
-  <div id="intro">{{ .Content }}</div>
+
+  <ul class="nav-primary">
+
+    <li>
+      <a href="{{ "portfolio/" | relURL }}">
+        {{ partial "icons/app_portfolio.svg" }}
+        <span>App Portfolio</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="{{ "presentation/" | relURL }}">
+        {{ partial "icons/presentations.svg" }}
+        <span>Presentations</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="{{ "post/" | relURL }}">
+        {{ partial "icons/blog.svg" }}
+        <span>Dusty Blog</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="https://github.com/chris-horner">
+        {{ partial "icons/github.svg" }}
+        <span>Github</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        {{ partial "icons/hire_me.svg" }}
+        <span>Hire Me</span>
+      </a>
+    </li>
+
+  </ul>
+
+  <ul class="nav-social">
+
+    <li>
+      <a href="https://bsky.app/profile/chris-horner.bsky.social">
+        {{ partial "icons/bluesky.svg" }}
+      </a>
+    </li>
+
+    <li>
+      <a rel="me" href="https://androiddev.social/@chrishorner">
+        {{ partial "icons/mastodon.svg" }}
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.linkedin.com/in/chrishorner">
+        {{ partial "icons/linkedin.svg" }}
+      </a>
+    </li>
+
+    <li>
+      <a href="{{ "index.xml" | absURL }}">
+        {{ partial "icons/rss.svg" }}
+      </a>
+    </li>
+
+  </ul>
 </body>
 {{ end }}

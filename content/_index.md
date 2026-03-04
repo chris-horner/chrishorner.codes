@@ -1,8 +1,6 @@
 ---
 title: "Chris Horner"
-summary: "Android developer and designer."
+summary: "Software engineer with a love of user interfaces, interaction design, and Android."
 ---
 
-I like to build Android apps with a strong focus on UX.
-
-One day I'll make games.
+Software engineer with a love of user interfaces, interaction design, and&nbsp;Android.
