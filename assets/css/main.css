@@ -221,25 +221,6 @@ h1 > a:hover {
     opacity: 0.7;
 }
 
-h2 > a > svg {
-    vertical-align: middle;
-}
-
-#rss-icon {
-    fill: var(--link-colour);
-}
-
-.subhead {
-    margin-left: 16px;
-    text-decoration: none;
-    font-size: x-large;
-    color: var(--text-colour-secondary);
-}
-
-.subhead > span:hover {
-    color: var(--link-hover-colour);
-}
-
 ul.nav-primary {
     list-style-type: none;
     margin: 0;
@@ -309,7 +290,7 @@ ul.nav-social {
 #content-inner-container {
     background-color: var(--content-container-colour);
     padding: 2px 12px 16px 12px;
-    margin: 32px auto 0 auto;
+    margin: 0 auto;
     max-width: 100%;
     width: 900px;
     box-sizing: border-box;
@@ -318,6 +299,25 @@ ul.nav-social {
 #content-inner-container p:not(.subtitle) {
     margin-top: 24px;
     margin-bottom: 24px;
+}
+
+.detail-header {
+    padding: 32px 0 16px 0;
+}
+
+.detail-header h1 {
+    font-size: min(3rem, 8vw);
+    margin: 0;
+}
+
+#content-inner-container h2 {
+    text-align: left;
+    margin-top: 32px;
+}
+
+#content-inner-container > span#date {
+    display: block;
+    margin-bottom: 32px;
 }
 
 #list-inner-container {
@@ -350,6 +350,11 @@ ul.nav-social {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-weight: 600;
+    text-decoration: none;
+}
+
+a.list-subtitle:hover {
+    opacity: 0.7;
 }
 
 .list-subtitle svg {
@@ -441,13 +446,6 @@ blockquote p {
     display: inline;
 }
 
-.subtitle {
-    text-align: center;
-    color: var(--text-colour-secondary);
-    margin-top: 8px;
-    margin-bottom: 16px;
-}
-
 .screen-collection {
     text-align: center;
     display: flex;
@@ -524,17 +522,22 @@ pre {
     float: right;
     width: 460px;
     padding: 8px;
+    margin-top: 24px;
     max-width: 100%;
     display: inline;
 }
 
-span.conference {
-    color: var(--text-colour-tertiary);
-}
-
-span.location {
-    color: var(--text-colour-secondary);
-    font-size: small;
+@media screen and (max-width: 700px) {
+    .post-image-right,
+    #content-inner-container img[style*="float"],
+    #content-inner-container video[style*="float"],
+    #content-inner-container figure[style*="float"] {
+        float: none !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 16px 0 !important;
+    }
 }
 
 section.video-container {
@@ -595,7 +598,7 @@ section.slides-container {
     #content-inner-container {
         background-color: var(--content-container-colour);
         padding: 16px 56px 32px 56px;
-        margin: 64px auto 0 auto;
+        margin: 0 auto;
         max-width: 100%;
         width: 900px;
         box-sizing: border-box;

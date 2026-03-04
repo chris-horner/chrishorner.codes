@@ -2,16 +2,17 @@
 
 <body id="portfolio-item">
 
-  <header>
-    <h1><a href="{{ "/" | relURL }}">Chris Horner</a></h1>
-    <a class="subhead" href="{{ "portfolio/" | relURL }}"><span>Portfolio</span></a>
-  </header>
-
   <div id="content-outer-container">
     <div id="content-inner-container">
+      <header class="detail-header">
+        <h1><a href="{{ "/" | relURL }}">Chris Horner</a></h1>
+        <a class="list-subtitle" href="{{ "portfolio/" | relURL }}">
+          {{ partial "icons/app_portfolio.svg" }}
+          <span>App Portfolio</span>
+        </a>
+      </header>
       <h2>{{ .Title }}</h2>
-      <p class="subtitle">{{ .Date.Format "2006" }}</p>
-      <hr/>
+      <span id="date">{{ .Date.Format "2006" }}</span>
       {{ .Content }}
       <div class="screen-collection">
         {{ range .Params.screens }}
