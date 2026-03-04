@@ -93,17 +93,17 @@ into straight Kotlin it'd be something like:
 
 ```kotlin
 val transition = TransitionSet()
-    .setDuration(350)
-    .setOrdering(ORDERING_TOGETHER)
-    .addTransition(ChangeBounds()
-                       .setInterpolator(FastOutSlowInInterpolator())
-                       .addTarget(R.id.background))
-    .addTransition(ShotSharedEnter()
-                       .setInterpolator(FastOutSlowInInterpolator())
-                       .addTarget(R.id.shot))
-    .addTransition(DarkenImage(0.85f, 1.0f)
-                       .setInterpolator(LinearInterpolator())
-                       .addTarget(R.id.shot))
+  .setDuration(350)
+  .setOrdering(ORDERING_TOGETHER)
+  .addTransition(ChangeBounds()
+    .setInterpolator(FastOutSlowInInterpolator())
+    .addTarget(R.id.background))
+  .addTransition(ShotSharedEnter()
+    .setInterpolator(FastOutSlowInInterpolator())
+    .addTarget(R.id.shot))
+  .addTransition(DarkenImage(0.85f, 1.0f)
+    .setInterpolator(LinearInterpolator())
+    .addTarget(R.id.shot))
 ```
 
 This is much shorter, and I feel it's only slightly worse at conveying how the transitions relate to each other. However

@@ -499,10 +499,6 @@ pre {
     padding-right: 8px;
 }
 
-.highlight pre code * {
-    white-space: nowrap;
-}
-
 .highlight pre {
     overflow-x: auto;
     padding: 24px 16px 24px 16px;
