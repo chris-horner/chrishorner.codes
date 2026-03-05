@@ -35,7 +35,7 @@
         --quote-background-colour: #262626;
         --quote-indent-colour: #404040;
         --code-background-colour: #262626;
-        --text-colour-body: #c8c8c8;
+        --text-colour-body: #d8d8d8;
         --inline-code-colour: #8aaab8;
     }
 }
@@ -399,6 +399,7 @@ ul.list {
     margin-top: 4px;
     margin-bottom: 4px;
     font-size: 1.3rem;
+    font-weight: 400;
     color: var(--text-colour-secondary);
 }
 
