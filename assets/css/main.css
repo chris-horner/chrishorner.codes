@@ -230,6 +230,7 @@ ul.nav-primary {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    flex-grow: 1;
 }
 
 .nav-primary li a {
@@ -258,7 +259,7 @@ ul.nav-primary {
     flex-shrink: 0;
 }
 
-ul.nav-social {
+ul.nav-links {
     list-style-type: none;
     margin: auto 0 0 0;
     padding: 0;
@@ -268,18 +269,18 @@ ul.nav-social {
     padding-top: clamp(16px, 2vw, 32px);
 }
 
-.nav-social li a {
+.nav-links li a {
     color: var(--text-colour-light);
     text-decoration: none;
     display: block;
     transition: opacity 0.15s ease;
 }
 
-.nav-social li a:hover {
+.nav-links li a:hover {
     opacity: 0.7;
 }
 
-.nav-social svg {
+.nav-links svg {
     width: clamp(28px, 5vw, 64px);
     height: clamp(28px, 5vw, 64px);
     display: block;
