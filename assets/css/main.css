@@ -226,33 +226,11 @@ h1 > a:hover {
     opacity: 0.7;
 }
 
-@keyframes fade-up {
-    from {
-        opacity: 0;
-        transform: translateY(12px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 ul.nav-primary {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
-.nav-primary li {
-    opacity: 0;
-    animation: fade-up 0.3s ease forwards;
-}
-
-.nav-primary li:nth-child(1) { animation-delay: 0.05s; }
-.nav-primary li:nth-child(2) { animation-delay: 0.1s; }
-.nav-primary li:nth-child(3) { animation-delay: 0.15s; }
-.nav-primary li:nth-child(4) { animation-delay: 0.2s; }
-.nav-primary li:nth-child(5) { animation-delay: 0.25s; }
 
 .nav-primary li a {
     color: var(--text-colour-light);
