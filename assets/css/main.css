@@ -225,11 +225,33 @@ h1 > a:hover {
     opacity: 0.7;
 }
 
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 ul.nav-primary {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
+.nav-primary li {
+    opacity: 0;
+    animation: fade-up 0.3s ease forwards;
+}
+
+.nav-primary li:nth-child(1) { animation-delay: 0.05s; }
+.nav-primary li:nth-child(2) { animation-delay: 0.1s; }
+.nav-primary li:nth-child(3) { animation-delay: 0.15s; }
+.nav-primary li:nth-child(4) { animation-delay: 0.2s; }
+.nav-primary li:nth-child(5) { animation-delay: 0.25s; }
 
 .nav-primary li a {
     color: var(--text-colour-light);
@@ -242,10 +264,12 @@ ul.nav-primary {
     display: flex;
     align-items: center;
     padding: clamp(8px, 0.7vw, 10px) 0;
+    transition: opacity 0.15s ease, transform 0.15s ease;
 }
 
 .nav-primary li a:hover {
     opacity: 0.7;
+    transform: translateX(6px);
 }
 
 .nav-primary svg {
@@ -269,6 +293,7 @@ ul.nav-social {
     color: var(--text-colour-light);
     text-decoration: none;
     display: block;
+    transition: opacity 0.15s ease;
 }
 
 .nav-social li a:hover {
@@ -440,6 +465,7 @@ ul.list {
     display: block;
     padding: 20px 16px;
     border-left: 3px solid transparent;
+    transition: border-left-color 0.15s ease, background-color 0.15s ease;
 }
 
 .list a:hover {
