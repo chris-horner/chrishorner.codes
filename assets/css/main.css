@@ -114,6 +114,7 @@ body {
 
 body {
     font-family: "HostGrotesk", "Verdana", "Open Sans", "Helvetica", Sans-Serif;
+    font-weight: 300;
     display: flex;
     flex-direction: column;
     background-color: var(--background-colour);
@@ -143,7 +144,7 @@ h5 {
 
 p > a {
     color: var(--text-colour-primary);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 li {
@@ -154,7 +155,7 @@ li {
 
 li > a {
     color: var(--text-colour-primary);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 h4 {
@@ -431,6 +432,10 @@ ul.nav-social {
 
 #list-inner-container .detail-breadcrumb {
     padding: 32px 16px 0 16px;
+}
+
+#content-inner-container .list-title {
+    margin-left: 0;
 }
 
 .list-title {
@@ -743,4 +748,59 @@ section.slides-container {
     code {
         font-size: 1.05rem;
     }
+}
+
+.resume-entry {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 32px 0;
+}
+
+.resume-entry > img {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    object-fit: contain;
+    margin-top: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .resume-entry > img.invert-dark {
+        filter: invert(1);
+    }
+}
+
+.resume-entry > div {
+    flex: 1;
+    min-width: 0;
+}
+
+.resume-entry h3 {
+    margin: 0;
+    font-family: "HostGrotesk", "Verdana", Sans-Serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--text-colour-primary);
+}
+
+.resume-entry .subtitle {
+    margin: 2px 0 0 0;
+    color: var(--text-colour-secondary);
+    font-size: 1.1rem;
+}
+
+.resume-entry #date {
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.resume-entry ul {
+    margin: 8px 0 0 0;
+    padding-left: 20px;
+}
+
+.resume-entry li {
+    margin-bottom: 4px;
 }
