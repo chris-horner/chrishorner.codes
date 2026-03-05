@@ -218,7 +218,7 @@ h1 > a {
     margin: 8px 0 clamp(24px, 3vw, 40px) 0;
     padding-left: clamp(2px, 0.4vw, 8px);
     font-size: clamp(1.4rem, 2.2vw, 2.8rem);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 h1 > a:hover {
@@ -296,7 +296,7 @@ ul.nav-social {
     padding: 2px 12px 16px 12px;
     margin: 0 auto;
     max-width: 100%;
-    width: 900px;
+    width: 960px;
     box-sizing: border-box;
 }
 
@@ -305,67 +305,127 @@ ul.nav-social {
     margin-bottom: 24px;
 }
 
-.detail-header {
-    padding: 32px 0 16px 0;
+.detail-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 32px 0 0 0;
+    font-family: "MonoSpec", monospace;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
 }
 
-.detail-header h1 {
-    font-size: min(3rem, 8vw);
-    margin: 0;
+.detail-breadcrumb a {
+    color: var(--text-colour-secondary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.detail-breadcrumb a:hover {
+    color: var(--link-hover-colour);
+}
+
+.detail-breadcrumb svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.breadcrumb-sep {
+    color: var(--text-colour-tertiary);
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 500px) {
+    .detail-breadcrumb > a:first-child {
+        display: none;
+    }
+
+    .detail-breadcrumb > a:first-child + .breadcrumb-sep {
+        display: none;
+    }
+
+    .detail-breadcrumb > a:last-child::before {
+        content: "← ";
+    }
+}
+
+#content-inner-container h2,
+#content-inner-container h3,
+#content-inner-container h4,
+#content-inner-container h5,
+#content-inner-container h6 {
+    font-family: "HostGrotesk", "Verdana", Sans-Serif;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 #content-inner-container h2 {
     text-align: left;
-    margin-top: 32px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
 }
 
-#content-inner-container > span#date {
-    display: block;
+#content-inner-container h3 {
+    font-size: 1.5rem;
+}
+
+.detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    font-family: "MonoSpec", monospace;
+    font-size: 1rem;
+    color: var(--text-colour-secondary);
     margin-bottom: 32px;
+}
+
+.detail-meta a {
+    color: var(--text-colour-secondary);
+    font-weight: 600;
+}
+
+.detail-meta a:hover {
+    color: var(--link-hover-colour);
 }
 
 #list-inner-container {
     text-align: left;
     background-color: var(--content-container-colour);
-    padding: 2px 0 8px 0;
+    padding: 0 0 8px 0;
     margin: 0 auto;
     max-width: 100%;
     width: 600px;
     box-sizing: border-box;
 }
 
-.list-header {
-    padding: 32px 16px 16px 16px;
+#list-inner-container .detail-breadcrumb {
+    padding: 32px 16px 0 16px;
 }
 
-.list-header h1 {
-    font-size: min(3rem, 8vw);
-    margin: 0;
-}
-
-.list-subtitle {
+.list-title {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-top: 4px;
-    color: var(--text-colour-secondary);
+    gap: 10px;
+    margin: 16px 16px 8px 16px;
     font-family: "MonoSpec", monospace;
-    font-size: min(1.8rem, 4.8vw);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
     font-weight: 600;
-    text-decoration: none;
+    font-size: clamp(1.6rem, 4vw, 2rem);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-colour-primary);
 }
 
-a.list-subtitle:hover {
-    opacity: 0.7;
-}
-
-.list-subtitle svg {
-    width: min(48px, 8vw);
-    height: min(48px, 8vw);
+.list-title svg {
+    width: 1.2em;
+    height: 1.2em;
     flex-shrink: 0;
-    color: var(--text-colour-secondary);
+    color: var(--text-colour-primary);
 }
 
 ul.list {
@@ -378,12 +438,14 @@ ul.list {
     text-decoration: none;
     color: var(--text-colour-primary);
     display: block;
-    padding: 16px 16px;
+    padding: 20px 16px;
+    border-left: 3px solid transparent;
 }
 
 .list a:hover {
     color: var(--link-hover-colour);
     background: var(--content-hover-background-colour);
+    border-left-color: var(--link-hover-colour);
 }
 
 .list a:hover span {
@@ -393,6 +455,9 @@ ul.list {
 .list h3 {
     margin-top: 0;
     margin-bottom: 0px;
+    font-family: "HostGrotesk", "Verdana", Sans-Serif;
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 .list p {
@@ -410,11 +475,11 @@ ul.list {
 }
 
 .list img {
-    width: 64px;
-    height: 64px;
+    width: 72px;
+    height: 72px;
     margin-right: 16px;
     vertical-align: middle;
-    border-radius: 12px;
+    border-radius: 14px;
 }
 
 hr {
@@ -480,7 +545,7 @@ figcaption {
 
 span#date {
     color: var(--text-colour-tertiary);
-    font-size: medium;
+    font-size: 0.9rem;
     font-family: "MonoSpec", monospace;
 }
 
@@ -550,10 +615,11 @@ section.video-container {
     position: relative;
     height: 0;
     padding-bottom: 56.25%;
+    margin-top: 40px;
 }
 
 section.slides-container {
-    margin-top: 16px;
+    margin-top: 40px;
     margin-bottom: 8px;
     position: relative;
     height: 0;
@@ -606,7 +672,7 @@ section.slides-container {
         padding: 16px 56px 32px 56px;
         margin: 0 auto;
         max-width: 100%;
-        width: 900px;
+        width: 960px;
         box-sizing: border-box;
     }
 
@@ -620,8 +686,12 @@ section.slides-container {
         box-sizing: border-box;
     }
 
-    .list-header {
-        padding: 48px 32px 24px 32px;
+    #list-inner-container .detail-breadcrumb {
+        padding: 32px 32px 0 32px;
+    }
+
+    .list-title {
+        margin: 16px 32px 8px 32px;
     }
 
     .list a {
@@ -629,14 +699,15 @@ section.slides-container {
         color: var(--text-colour-primary);
         display: block;
         padding: 24px 32px;
+        border-left: 3px solid transparent;
     }
 
     .list img {
-        width: 80px;
-        height: 80px;
+        width: 88px;
+        height: 88px;
         margin-right: 32px;
         vertical-align: middle;
-        border-radius: 14px;
+        border-radius: 16px;
     }
 
     p, li {

@@ -4,15 +4,18 @@
 
   <div id="content-outer-container">
     <div id="content-inner-container">
-      <header class="detail-header">
-        <h1><a href="{{ "/" | relURL }}">Chris Horner</a></h1>
-        <a class="list-subtitle" href="{{ "post/" | relURL }}">
+      <nav class="detail-breadcrumb">
+        <a href="{{ "/" | relURL }}">Chris Horner</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="{{ "post/" | relURL }}">
           {{ partial "icons/blog.svg" }}
           <span>Blog</span>
         </a>
-      </header>
+      </nav>
       <h2>{{ .Title }}</h2>
-      <span id="date">{{ .Date.Format "2 January 2006" }}</span>
+      <div class="detail-meta">
+        <span>{{ .Date.Format "2 January 2006" }}</span>
+      </div>
       {{ .Content }}
       <p class="signature">&mdash; {{ .Site.Params.author.name }}</p>
     </div>

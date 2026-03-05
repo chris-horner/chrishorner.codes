@@ -4,13 +4,13 @@
 
   <div id="content-outer-container">
     <div id="list-inner-container">
-      <header class="list-header">
-        <h1><a href="{{ "/" | relURL }}">Chris Horner</a></h1>
-        <div class="list-subtitle">
-          {{ partial "icons/app_portfolio.svg" }}
-          <span>{{ .Title }}</span>
-        </div>
-      </header>
+      <nav class="detail-breadcrumb">
+        <a href="{{ "/" | relURL }}">Chris Horner</a>
+      </nav>
+      <h2 class="list-title">
+        {{ partial "icons/app_portfolio.svg" }}
+        <span>{{ .Title }}</span>
+      </h2>
       <ul class="list">
         {{ range .Pages }}
         <li>
