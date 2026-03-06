@@ -9,4 +9,4 @@ draft: false
 
 Built for an international agency, this application was designed to be used by officers in the field. It gave them the ability to run quick searches on persons, vehicles, and locations of interest without having to call dispatch. It also displayed current jobs, assignees, and logs of all events occurring in the officer's district.
 
-I led a team of Android developers at [Gridstone](https://gridstone.com.au) in order to bring this application to life. We faced a few challenges along the way, but I'm really proud of what we were able to accomplish given the constraints.
+I led a team of Android developers at [Gridstone](https://web.archive.org/web/20200225161526/https://gridstone.com.au/) in order to bring this application to life. We faced a few challenges along the way, but I'm really proud of what we were able to accomplish given the constraints.

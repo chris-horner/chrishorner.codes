@@ -15,3 +15,5 @@ An updated and more extensive version of the DroidKaigi presentation. This talk 
 It begins by discussing the homogenisation of user interfaces on mobile, how the used to be more experimental, and looks at video games as a source of continued innovation.
 
 Persona 5 makes for a perfect case study with an incredibly expressive mobile chat UI appearing inside the video game. Not looking anything like a regular mobile app, this talk breaks down how to faithfully recreate the game's interface using Compose UI.
+
+This talk proved to be very popular, with the recording reaching over 90,000 views.
