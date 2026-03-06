@@ -7,11 +7,11 @@ experience:
     dates: "Feb 2021 - Present"
     icon: "hire-cash.png"
     points:
-      - "Began working by on bespoke in-app chat support experience"
+      - "Began by working on bespoke in-app chat support experience"
       - "Championed the effort to adopt Compose UI across the codebase"
       - "Became Android lead on the Design Systems team - led the implementation and adoption of a new Compose UI-first design system"
-      - "Managed contributions and migrations from over 60 engineers across the organisation"
-      - "Collaborated closely with designers to ensure system consistency between design and engineering"
+      - "Managed contributions and migrations from over 60 Android engineers across the organisation"
+      - "Collaborated closely with designers and iOS engineers to ensure system consistency"
       - "Worked on AI integrations to facilitate Figma to code workflows"
   - company: "Itty Bitty Apps"
     role: "Senior Android Developer"
@@ -47,6 +47,8 @@ experience:
 ---
 
 I've done a lot of Android throughout my career, spent much of my time shoulder to shoulder with designers, and really care about UIs. My experience spans freelancing, small agencies, and all the way up to a large US tech company.
+
+Although based out of Melbourne, I have a significant amount of experience working remotely - successfully leading multi-team efforts across timezones.
 
 I'm currently searching for new opportunities after [Block's colossal layoffs](https://www.theguardian.com/technology/2026/feb/27/block-ai-layoffs-jack-dorsey). I'm interested in companies that:
 - Deliver interesting user experiences
