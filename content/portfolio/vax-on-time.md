@@ -7,7 +7,7 @@ screens: ["vax-screen1.png", "vax-screen2.png"]
 draft: false
 ---
 
-Built at [Gridstone](https://gridstone.com.au) for the Victorian Department of Health and Human Services, VaxOnTime was an app that helped remind parents when immunisations were due for their children. It also provided the ability to search for nearby facilities that provide vaccinations with their booking information.
+Built at [Gridstone](https://web.archive.org/web/20200225161526/https://gridstone.com.au/) for the Victorian Department of Health and Human Services, VaxOnTime was an app that helped remind parents when immunisations were due for their children. It also provided the ability to search for nearby facilities that provide vaccinations with their booking information.
 
 Only iOS designs were ever formally created for this project, and it was up to me to invent something that would feel at home on Android.
 
