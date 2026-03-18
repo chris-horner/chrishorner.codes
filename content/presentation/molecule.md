@@ -1,7 +1,7 @@
 ---
 title: "Molecule: Using Compose for presentation logic"
 date: 2022-10-06T15:40:00+09:00
-summary: "A collection of throughts around building user interfaces for Android."
+summary: "How Compose represents a shift in thinking as coroutines did from Rx."
 conference: "DroidKaigi"
 conferenceLink: "https://droidkaigi.jp/2022/en/"
 location: "Tokyo"
