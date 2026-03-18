@@ -3,7 +3,7 @@ title: "Cash App"
 date: 2021-02-01T09:00:00+11:00
 summary: "Making money easy in the US."
 icon: "cash-launcher.png"
-screens: ["cash-screen1.png", "cash-screen2.png"]
+screens: ["cash-screen1.png", "cash-screen2.png", "cash-screen3.png", "cash-screen4.png", "cash-screen5.png"]
 draft: false
 ---
 
