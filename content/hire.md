@@ -4,7 +4,7 @@ summary: "Experience and education."
 experience:
   - company: "Cash App"
     role: "Staff Software Engineer"
-    dates: "Feb 2021 - Present"
+    dates: "Feb 2021 - Mar 2026"
     icon: "hire-cash.png"
     points:
       - "Began by working on bespoke in-app chat support experience"
@@ -54,7 +54,8 @@ I'm currently searching for new opportunities after [Block's colossal layoffs](h
 - Deliver interesting user experiences
 - Care about quality
 - Aren't involved in gambling or crypto
+- Value collaborative problem solving
 
-If you work somewhere that's looking for an engineer who can collaborate easily with designers and really understands UIs, then [send me an email](mailto:chris@horner.chat).
+If you work somewhere that's looking for an engineer who can partner with designers and really understands UIs, then [send me an email](mailto:chris@horner.chat).
 
 For detailed information on individual projects, please refer to my [portfolio](/portfolio).
