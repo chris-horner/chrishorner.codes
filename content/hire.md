@@ -1,6 +1,6 @@
 ---
 title: "Hire Me"
-summary: "Experience and education."
+summary: "About me and what I'm looking for."
 experience:
   - company: "Cash App"
     role: "Staff Software Engineer"
