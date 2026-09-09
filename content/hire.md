@@ -1,6 +1,6 @@
 ---
-title: "Hire Me"
-summary: "About me and what I'm looking for."
+title: "Résumé"
+summary: "About me and the work I've done."
 experience:
   - company: "Cash App"
     role: "Staff Software Engineer"
@@ -50,7 +50,7 @@ I've done a lot of Android throughout my career, spent much of my time shoulder 
 
 Although based out of Melbourne, I have a significant amount of experience working remotely - successfully leading multi-team efforts across timezones.
 
-I'm currently searching for new opportunities after [Block's colossal layoffs](https://www.theguardian.com/technology/2026/feb/27/block-ai-layoffs-jack-dorsey). I'm interested in companies that:
+I align with companies that:
 - Deliver interesting user experiences
 - Care about quality
 - Aren't involved in gambling or crypto
